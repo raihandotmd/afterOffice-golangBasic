@@ -66,12 +66,12 @@ func minAndMaxTransaction(expenseList []int) (float64, int, int) {
 			max = v
 		}
 	}
-	mean := float64(sum / len(expenseList))
+	mean := float64(sum) / float64(len(expenseList))
 
 	return mean, min, max // contoh jika rata2 = 50, minimum = 1, dan maksimum = 99
 
   /* 
-  Time Complexity: O(n)
+  Time Complexity: O(1)
   Space Complexity: O(1)
   */
 }
